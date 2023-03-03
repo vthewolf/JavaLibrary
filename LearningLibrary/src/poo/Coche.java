@@ -15,5 +15,34 @@ public class Coche{
         peso = 500;
     }
     
-    
+    public int getRuedas() {
+        return ruedas;
+    }
+    public int getLargo() {
+        return largo;
+    }
+    public int getAncho() {
+        return ancho;
+    }
+    public int getMotor() {
+        return motor;
+    }
+    public int getPeso() {
+        return peso;
+    }
+    public void setRuedas(int ruedas) {
+        this.ruedas = ruedas;
+    }
+    public void setLargo(int largo) {
+        this.largo = largo;
+    }
+    public void setAncho(int ancho) {
+        this.ancho = ancho;
+    }
+    public void setMotor(int motor) {
+        this.motor = motor;
+    }
+    public void setPeso(int peso) {
+        this.peso = peso;
+    }
 }
