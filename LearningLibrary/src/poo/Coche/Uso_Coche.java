@@ -1,4 +1,4 @@
-package poo;
+package poo.Coche;
 
 import javax.swing.*;
 

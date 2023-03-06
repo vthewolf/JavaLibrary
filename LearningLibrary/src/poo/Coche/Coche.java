@@ -1,4 +1,4 @@
-package poo;
+package poo.Coche;
 public class Coche{
     // Propiedades comunes
     private int ruedas;
@@ -21,7 +21,6 @@ public class Coche{
         motor = 1600;
         peso_plataforma = 500;
     }
-    
 
     public int getRuedas() {
         return this.ruedas;
@@ -80,7 +79,7 @@ public class Coche{
     }
 
     public String getAsientos_cuero() {
-        if (asientos_cuero == true){
+        if (asientos_cuero){
             return "El coche tiene asientos de cuero";
         } else {
             return "El coche tiene asientos de serie.";
@@ -92,7 +91,7 @@ public class Coche{
     }
 
     public String getClimatizador() {
-        if (climatizador == true) {    
+        if (climatizador) {    
             return "El coche incorpora climatizador";
             } else {
             return "El coche lleva aire acondicionado";
