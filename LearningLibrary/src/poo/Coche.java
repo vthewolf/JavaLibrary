@@ -79,16 +79,12 @@ public class Coche{
         this.peso_total = peso_total;
     }
 
-    public boolean isAsientos_cuero() {
-        return this.asientos_cuero;
-    }
-
-    public boolean getAsientos_cuero() {
-        return this.asientos_cuero;
-    }
-
-    public void setAsientos_cuero(boolean asientos_cuero) {
-        this.asientos_cuero = asientos_cuero;
+    public String getAsientos_cuero() {
+        if (asientos_cuero == true){
+            return "El coche tiene asientos de cuero";
+        } else {
+            return "El coche tiene asientos de serie.";
+        }
     }
 
     public boolean isClimatizador() {
@@ -101,6 +97,14 @@ public class Coche{
 
     public void setClimatizador(boolean climatizador) {
         this.climatizador = climatizador;
+    }
+
+    public void configuraAsientos(String asientosCuero){
+        if (asientosCuero.equalsIgnoreCase("si")){
+            this.asientos_cuero = true;
+        }else {
+            this.asientos_cuero = false;
+        }
     }
     
 }
