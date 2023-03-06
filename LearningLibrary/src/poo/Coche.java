@@ -91,12 +91,20 @@ public class Coche{
         return this.climatizador;
     }
 
-    public boolean getClimatizador() {
-        return this.climatizador;
+    public String getClimatizador() {
+        if (climatizador == true) {    
+            return "El coche incorpora climatizador";
+            } else {
+            return "El coche lleva aire acondicionado";
+        }
     }
 
-    public void setClimatizador(boolean climatizador) {
-        this.climatizador = climatizador;
+    public void configuraClimatizador(String climatizador) {
+        if (climatizador.equalsIgnoreCase("si")) {
+            this.climatizador = true;
+        } else {
+            this.climatizador = false;
+        }
     }
 
     public void configuraAsientos(String asientosCuero){
